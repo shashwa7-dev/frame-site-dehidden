@@ -7,14 +7,10 @@ function Loader(){
   )
 }
 
-function handlePreLoad(){
-  const loader = document.querySelector('.preloader')
-  window.addEventListener('load',() => loader.style.display = 'none')
-}
 class App extends React.Component {
 
   componentDidMount(){
-    handlePreLoad() //disables loader once site completely loaded
+    document.querySelector('.preloader').style.display = 'none'
   }
   render(){
   return (
