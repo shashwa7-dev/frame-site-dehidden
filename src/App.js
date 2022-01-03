@@ -1,18 +1,20 @@
 import React from "react";
 import MicroSite from "./components/Microsite";
+import {BrowserRouter, Route,Switch} from 'react-router-dom'
 
-// function Loader(){
-//   return(
-//     <div className="preloader"></div>
-//   )
-// }
 
 class App extends React.Component {
   render(){
   return (
+   <BrowserRouter>
     <div className="App">
-      <MicroSite/> 
+    <Switch>
+      <Route path="/phygitals/kit" >
+        <MicroSite /> 
+      </Route>
+    </Switch>
     </div>
+    </BrowserRouter>
   );
   }
 }
