@@ -5,24 +5,8 @@ import goggles from '../static/media/goggles.png'
 import teddy  from '../static/media/teddy.png'
 import saturn from '../static/media/saturn.png'
 
+
 function RenderUtilityItem({data}){
-    if(data.id == 3){
-      return(
-        <a href={data.url} key={data.id} download>
-        <div className="utility" key={data.id}>
-          <div className="utility_icon">
-            <img src={data.img_src} alt="" />
-          </div>
-          <div className="utility_text">
-            <div className="utility_heading">{data.head}</div>
-            <div className="utility_subheading">
-              {data.sub_head}
-            </div>
-          </div>
-        </div>
-      </a>
-      )
-    }else{
     return(
         <a href={data.url} key={data.id} target="_blank">
         <div className="utility" key={data.id}>
@@ -37,7 +21,7 @@ function RenderUtilityItem({data}){
           </div>
         </div>
       </a>
-    )}
+    )
 }
 function UtilitiesPanel() {
    let items = [
@@ -60,7 +44,7 @@ function UtilitiesPanel() {
     img_src: teddy ,
     head:'Download 3D Model',
     sub_head:'Instantly get acccess to the blend file',
-    url:'https://pbs.twimg.com/media/FIGvnCcVIAMhqp0?format=jpg&name=large'
+    url:'https://github.com/DehiddenTeam/phygital-frontend/raw/master/src/static/media/loveabot.jpeg'
    },
    {
     id: 4,
