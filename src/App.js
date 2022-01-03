@@ -8,11 +8,9 @@ class App extends React.Component {
   return (
    <BrowserRouter>
     <div className="App">
-    <Switch>
-      <Route path="/phygitals/kit" >
+      <Route path="/phygitals/kit/">
         <MicroSite /> 
       </Route>
-    </Switch>
     </div>
     </BrowserRouter>
   );
