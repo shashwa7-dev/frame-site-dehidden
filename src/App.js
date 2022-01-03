@@ -6,7 +6,7 @@ import {HashRouter, Route} from 'react-router-dom'
 class App extends React.Component {
   render(){
   return (
-   <HashRouter>
+   <HashRouter basename={'/ipfs/$hash/'}>
     <div className="App">
       <Route path="/phygitals/kit/">
         <MicroSite /> 
